@@ -37,13 +37,13 @@ def check_price():
 
 def send_email():
     server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.ehlo()  # stablishing connection with the server and the gmail
+    server.ehlo()  # establishing connection with the server and the gmail
     server.starttls()
     server.ehlo()
 
     server.login('toprashantshekhar@gmail.com', 'ccrpfiobzjfxhwgh')
 
-    subject = " Hey The Price Fall Bellow 95,000 !! "
+    subject = " Hey The Price Fell Bellow 95,000 !! "
     body = " Check the Amazon link https://www.amazon.in/Apple-MacBook-13-inch-Display-Dual-core/dp/B07KJQFNDQ/ref=asc_df_B07KJQFNDQ/?tag=googleshopdes-21&linkCode=df0&hvadid=397081131104&hvpos=1o4&hvnetw=g&hvrand=10860277668779493853&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007826&hvtargid=pla-614523065262&psc=1&ext_vrnc=hi"
 
     msg = f"Subject : { subject}\n\n{body}"
